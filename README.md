@@ -4,15 +4,15 @@ Se entrega un servicio que permite hacer CRUD de las entidades usuario y bootcam
 
 ## Metodos soportados:
 
-*GET*: Obtener información de un usuario o todos los usuarios/Bootcamp
+<b>GET</b>: Obtener información de un usuario o todos los usuarios/Bootcamp
 
-*POST*: Crear un nuevo Usuario/Bootcamp
+<b>POST</b>: Crear un nuevo Usuario/Bootcamp
 
-*POST*: Vincular un Usuario a un Bootcamp deseado
+<b>POST</b>: Vincular un Usuario a un Bootcamp deseado
 
-*PUT*: Actualizar la información de un Usuario
+<b>PUT</b>: Actualizar la información de un Usuario
 
-*DELETE*: Eliminar un Usuario
+<b>DELETE</b>: Eliminar un Usuario
 
 
 ## Instrucciones
@@ -21,7 +21,7 @@ Para ejecutar el servidor de ejemplo:
 
 Verificar que el puerto 3000 no esté en uso
 
-Ejecutar *npm run dev*  desde la terminal
+Ejecutar <b>npm run dev</b>  desde la terminal
 
 El servidor estará disponible en http://localhost:3000
 
@@ -29,24 +29,24 @@ El servidor estará disponible en http://localhost:3000
 ## Ejemplos de requests para Bootcamp
 
 
-*Obtener información de todos los Bootcamps:*
+<b>Obtener información de todos los Bootcamps:</b>
 
 GET http://localhost:3000/api/bootcamps
 
 
-*Obtener información de todos los Bootcamps:*
+<b>Obtener información de todos los Bootcamps:</b>
 
 GET http://localhost:3000/api/bootcamps/1
 
 
-*Crear Bootcamp:*
+<b>Crear Bootcamp:</b>
 
 POST http://localhost:3000/api/bootcamps/
 
 Por body -> raw -> JSON se entregan los siguientes datos: { title, cue, description}
 
 
-*Vincular User a Bootcamp:*
+<b>Vincular User a Bootcamp:</b>
 
 POST http://localhost:3000/api/bootcamps/vinculate/
 
@@ -56,24 +56,24 @@ Por body -> raw -> JSON se entregan los siguientes datos: {idBootcamp, idUser}
 ## Ejemplos de requests para User
 
 
-*Obtener información de todos los usuarios:*
+<b>Obtener información de todos los usuarios:</b>
 
 GET http://localhost:3000/api/users
 
 
-*Obtener información de un usuario en particular (ID)*
+<b>Obtener información de un usuario en particular (ID)</b>
 
 GET http://localhost:3000/api/users/2
 
 
-*Crear User:*
+<b>Crear User:</b>
 
 POST http://localhost:3000/api/users/
 
 Por body -> raw -> JSON se entregan los siguientes datos: { firstName, lastName, email }
 
 
-*Modificar User seleccionando por ID:*
+<b>Modificar User seleccionando por ID:</b>
 
 PUT http://localhost:3000/api/users/1
 
@@ -81,14 +81,14 @@ Por params se entrega el ID: { id }
 Por body -> raw -> JSON se entregan los siguientes datos: { firstName, lastName, email }
 
 
-*Se elimina modificando el status del User seleccionando por ID:*
+<b>Se elimina modificando el status del User seleccionando por ID:</b>
 
 DELETE http://localhost:3000/api/users/1
 
 Por params se entrega el ID: { id }
 
 
-*Se elimina destruyendo el User seleccionando por ID:*
+<b>Se elimina destruyendo el User seleccionando por ID:</b>
 
 DELETE http://localhost:3000/api/users/destroy/1
 
