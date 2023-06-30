@@ -2,6 +2,7 @@
 
 Se entrega un servicio que permite hacer CRUD de las entidades usuario y bootcamp, así como también asociar un usuario a un bootcamp mediante requests HTTP con el respectivo método y payload. El payload soportado es en formato JSON.
 
+
 ## Metodos soportados:
 
 <b>GET</b>: Obtener información de un usuario o todos los usuarios/Bootcamp
@@ -50,7 +51,7 @@ Por body -> raw -> JSON se entregan los siguientes datos: { title, cue, descript
 
 POST http://localhost:3000/api/bootcamps/vinculate/
 
-Por body -> raw -> JSON se entregan los siguientes datos: {idBootcamp, idUser}
+Por body -> raw -> JSON se entregan los siguientes datos: { idBootcamp, idUser }
 
 
 ## Ejemplos de requests para User

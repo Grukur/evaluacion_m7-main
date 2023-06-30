@@ -85,7 +85,7 @@ export const updateUserById = async (req, res) => {
       let { firstName, lastName, email } = req.body;
       let user = await User.findByPk(id)
       if (user) {
-        let updatedUser = await User.update(
+        await User.update(
           {id, firstName, lastName, email},
           { where: {id} }
           );
